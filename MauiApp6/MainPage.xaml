@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label FontSize="24" Text="Kontigfuracja:" />
+            <HorizontalStackLayout>
+                <CheckBox
+        x:Name="chkMale"
+        IsChecked="True" />
+                <Label Text="małe litery" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+        x:Name="chkDuze"
+        IsChecked="False" />
+                <Label Text="duże litery" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+        x:Name="chkCyfry"
+        IsChecked="False" />
+                <Label Text="cyfry" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+        x:Name="chkZnaki"
+        IsChecked="False" />
+                <Label Text="zaki specjalne" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Entry x:Name="entDlugosc" 
+           Text="8"/>
+                <Label Text="długość hasł" />
+            </HorizontalStackLayout>
+
+            <Button Text="Generuj" 
+        Clicked="btnGenerujClicked" />
+            <HorizontalStackLayout>
+                <Label Text="wygenerowane hasło:" />
+                <Label x:Name="lblHaslo" 
+           FontSize="24" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
